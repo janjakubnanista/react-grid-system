@@ -101,7 +101,9 @@ declare module 'react-grid-system' {
     }
 
     type ScreenClassProviderProps = {
-        children: React.ReactNode
+        children: React.ReactNode,
+        fallbackScreenClass?: 'xs' | 'sm' | 'md' | 'lg' | 'xl',
+        useOwnWidth?: boolean
     }
 
     export function setConfiguration(configuration: Configuration): void
